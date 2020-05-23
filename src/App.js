@@ -14,7 +14,12 @@ function App() {
         <title>IIIT-H Auctioning App</title>
         <style>{"body{background-color: #F08A00}"}</style>
       </Helmet>
-      <p>Hello World</p>
+      <div className="jumbotron text-center">
+        <div className="container-sm">
+          <h1 id="welcome_message" className="font-weight-bold ">The IIIT-H auction app!</h1>
+          <p id="desc" className="">An auctioning platform for IIIT-H students</p>
+        </div>
+      </div>
       
     </div>
   );
