@@ -12,9 +12,7 @@
   color:orangered;
 }
 
-#welcome_div{
-  margin-bottom: 20px;
-}
+
 
 #desc{
   font-size:150%;
@@ -25,6 +23,51 @@
 
 .App {
   text-align: center;
+}
+
+.navLogo{
+  position:relative;
+  left:-5px;
+}
+
+#navAucText{
+  color : #ff8533
+}
+
+.navLinks{
+  font-size: 120%;
+  opacity: 50%;
+  position:relative;
+  top:1.4px;
+
+}
+
+.navLinks:hover{
+  text-decoration: none;
+  opacity:100%;
+  text-shadow:orange 1.5px 1.5px;
+}
+
+#guest{
+  font-size: 120%;
+  position:relative; 
+  top:-3px;
+  opacity: 50%;
+}
+
+#guest:hover{
+  text-decoration: none;
+}
+
+.mainCols{
+  height:300px;
+}
+
+.temporary{
+  position: relative;
+  top:150px;
+  padding-left:100px;
+  font-size:190%;
 }
 
 

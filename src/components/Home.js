@@ -1,22 +1,29 @@
-import React from 'react';
+import React,{Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import {Navbar,Nav,Button, Container,Row,Col} from 'react-bootstrap';
 import 'jquery';
 import 'popper.js';
+import {Link} from 'react-router-dom';
 
 
-const home = () => {
-  return (
-    <div className="App">
-      <title>IIIT-H Auctioning App</title>
-      <div className="jumbotron text-center">
-        <div className="container  container-sm " id="welcome_div">
-          <h1 id="welcome_message" className="font-weight-bold display-3">The IIIT-H auction app!</h1>
-          <p id="desc" className="">An auctioning platform for IIIT-H students</p>
-        </div>
-      </div>
-    </div>
-  );
+class Home extends Component{
+  render(){
+    return(
+      <React.Fragment>
+        <Container fluid>
+          <Row>
+            <Col className="bg-danger mainCols text-white" sm={6}><p className="temporary">WELCOME MESSAGE GOES HERE</p></Col>
+            <Col className="bg-primary mainCols text-white" sm={6}><p className="temporary">UPDATES , RULES AND DETAILS</p></Col>
+          </Row>
+          <Row>
+            <Col className="bg-warning mainCols text-white" sm={6}><p className="temporary">FEATURED STUFF,HIGHEST BID DEALS AN OFFERS HERE!</p></Col>
+            <Col className="bg-primary mainCols text-white" sm={6}><p className="temporary">HEMANTHS IS THE ANIMAL OF THE NIGHT</p></Col>
+          </Row>
+        </Container>
+      </React.Fragment>
+    )
+  }
 }
 
-export default home;
+export default Home;
