@@ -11,8 +11,8 @@ class Nav extends Component{
         return(
             <React.Fragment>
                 <nav className="navbar navbar-expand-md bg-primary">
-                    <a className="navbar-brand" href="/home/mehul/webdev/HackDaddys/Hack-Daddys/public/index.html">
-                        <img src="/home/mehul/webdev/HackDaddys/Hack-Daddys/public/auction_icon2.png"/>
+                    <a className="navbar-brand" href="">
+                        <img src="./img/auction_icon2.png"/>
                     </a>
                 </nav>
             </React.Fragment>
