@@ -9,8 +9,11 @@
 
 #welcome_message{
   text-shadow: blue 1px 1px;
-  font-size:300%;
   color:orangered;
+}
+
+#welcome_div{
+  margin-bottom: 20px;
 }
 
 #desc{
