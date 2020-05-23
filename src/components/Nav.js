@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap';
+import {Navbar,Nav} from 'react-bootstrap';
 import 'jquery';
 import 'popper.js';
 import {NavLink} from 'react-router-dom';
