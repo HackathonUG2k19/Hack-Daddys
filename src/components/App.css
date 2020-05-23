@@ -1,0 +1,30 @@
+
+.jumbotron{
+  background-image: url('./img/IIITH.jpeg');
+  height:300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#welcome_message{
+  text-shadow: blue 1px 1px;
+  color:orangered;
+}
+
+#welcome_div{
+  margin-bottom: 20px;
+}
+
+#desc{
+  font-size:150%;
+  color:#0379EE;
+  font-weight: bolder;
+  
+}
+
+.App {
+  text-align: center;
+}
+
+
