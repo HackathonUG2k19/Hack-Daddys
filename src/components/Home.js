@@ -13,7 +13,7 @@ class Home extends Component{
       <React.Fragment>
         <Container fluid>
           <Row>
-            <Col className="bg-danger mainCols text-white" sm={6}><p className="temporary">WELCOME MESSAGE GOES HERE</p></Col>
+            <Col className=" mainCols text-white" id="welcomeMessage" sm={6}><h1 className="text-warning" id="welcomeText">WELCOME!!</h1></Col>
             <Col className="bg-primary mainCols text-white" sm={6}><p className="temporary">UPDATES , RULES AND DETAILS</p></Col>
           </Row>
           <Row>

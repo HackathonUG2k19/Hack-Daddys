@@ -70,4 +70,16 @@
   font-size:190%;
 }
 
+#welcomeMessage{
+  background-image:url('./img/splash_welcome.png');
+  height:300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#welcomeText{
+  
+}
+
 
