@@ -9,8 +9,8 @@ import {Link} from 'react-router-dom';
 class Nav1 extends Component{
 
     state={
-        signin:false,
-        signLink:"/contact",
+        signin:true,
+        signLink:"/signin",
         imgLinkGuest:"./img/user.png",
         imgLinkUser:"./img/male.png"
     }
@@ -41,11 +41,11 @@ class Nav1 extends Component{
                     <Nav>
                         <Navbar.Brand className="nav-logo">
                             <Link to={"/"}>
-                                {!this.state.signin ? <img src={require("./img/user.png")} width="40" className="d-inline-block align-top mr-0" alt="User logo"/> : <img src={require("./img/male.png")} width="40" className="d-inline-block align-top mr-0" alt="User logo"/>}
+                                {this.state.signin ? <img src={require("./img/user.png")} width="40" className="d-inline-block align-top mr-0" alt="User logo"/> : <img src={require("./img/male.png")} width="40" className="d-inline-block align-top mr-0" alt="User logo"/>}
                             </Link>
                         </Navbar.Brand>
                       <div class="nav-text mt-3 mr-4 text-white" id="guest">{this.state.signin ? "Username":"Guest"}</div>
-                    <Link className="mt-2" onClick={this.toggleSign} to={this.state.signLink}><Button   className="ml-3" variant="outline-warning">{!this.state.signin ? "Sign-in":"Sign-out"}</Button></Link>
+                    <Link className="mt-2" onClick={this.toggleSign} to={this.state.signLink}><Button   className="ml-3" variant="outline-warning">{this.state.signin ? "Sign-in":"Sign-out"}</Button></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
