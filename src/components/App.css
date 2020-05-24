@@ -117,6 +117,51 @@
   left:150px;
 }
 
+#hottestDeals{
+  height:700px;
+  background-color: #F0833C;
+}
+
+#dealsCar{
+  position:relative;
+  top:130px;
+}
+
+.carouselItem{
+  width:100%;
+  height:500px;
+}
+
+.carouselImgDiv{
+  width:60%;
+  height:500px;
+  float:left;
+}
+
+.carouselInfoDiv{
+  width:40%;
+  height:500px;
+  float:left;
+}
+
+.saleTag{
+  width:150px;
+  margin-left:90px;
+  margin-top:30px;
+}
+
+.carouselText{
+  font-family: 'Tauri';
+  font-size: 33px; 
+  font-weight: bolder;
+  text-shadow: red 3px 3px;
+  color:goldenrod;
+  padding-left:40px;
+  padding-top:30px;
+}
+
+
+
 @media screen and (max-width:900px){
   #splashWelcome{
     font-size:30px;
