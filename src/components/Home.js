@@ -57,8 +57,8 @@ class Home extends Component{
             </Col>
           </Row>
           <Row>
-            <Col className="bg-warning mainCols text-white" sm={6}><p className="temporary">FEATURED STUFF,HIGHEST BID DEALS AN OFFERS HERE!</p></Col>
-            <Col className="bg-primary mainCols text-white" sm={6}><p className="temporary">HEMANTHS IS THE ANIMAL OF THE NIGHT</p></Col>
+            <Col className="bg-warning mainCols text-white" sm={6}><p className="temporary"> GET THE MOST PREMIUM ITEMS FOR SALE IN IIIT-H FOR AFFORDABLE PRICES!</p></Col>
+            <Col className="bg-primary mainCols text-white" sm={6}><p className="temporary">REACH OUT TO YOUR IDEAL BUYER!</p></Col>
           </Row>
         </Container>
       </React.Fragment>

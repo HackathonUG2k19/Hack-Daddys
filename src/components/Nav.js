@@ -35,7 +35,6 @@ class Nav1 extends Component{
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto text-white  ">
-                        <Nav.Link><Link to={"/"} className="text-white mr-3 px-1 navLinks">Home</Link></Nav.Link>
                         <Nav.Link><Link to={"/about"} className="text-white mr-3 px-1 navLinks" id="signInLink">About</Link></Nav.Link>
                         <Nav.Link><Link  to={"/"} className="text-white mr-3 px-1 navLinks">View Items</Link></Nav.Link>
                     </Nav>
