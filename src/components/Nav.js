@@ -20,13 +20,8 @@ class Nav1 extends Component{
             <div>
 
                 <title>IIIT-H Auctioning App</title>
-                    <div className="jumbotron text-center mb-0">
-                    <div className="container  container-sm " >
-                    <h1 id="welcome_message" className="font-weight-bold display-3">The IIIT-H auction app!</h1>
-                    <p id="desc" className="">An auctioning platform for IIIT-H students</p>
-                    </div>
-                    </div>
-         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="my-0">
+                   
+         <Navbar fixed = "top" collapseOnSelect expand="lg" bg="dark" variant="dark" className="my-0">
                 <Navbar.Brand className="nav-logo">
                 <Link to={"/"}>
                 <img
