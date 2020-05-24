@@ -54,10 +54,10 @@ class Nav1 extends Component{
 
     toggleSign = ()=>{
         this.setState({signin:!this.state.signin});
-        if(this.state.signLink === "/contact")
+        if(this.state.signLink === "/signin")
             this.setState({signLink:"/"});
         else
-            this.setState({signLink:"/contact"});
+            this.setState({signLink:"/signin"});
         
     }
 }
