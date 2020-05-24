@@ -1,11 +1,17 @@
 import React,{Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Button, Container,Row,Col} from 'react-bootstrap';
+import {Button, Container,Row,Col,Carousel} from 'react-bootstrap';
 import 'jquery';
 import 'popper.js';
 
+setInterval(getTime,1000);
 
+function getTime(){
+  var timer;
+  timer = new Date();
+  return timer.toLocaleTimeString();
+}
 
 class Home extends Component{
   render(){
@@ -57,13 +63,67 @@ class Home extends Component{
             </Col>
           </Row>
           <Row>
-            <Col className="bg-warning mainCols text-white" sm={6}><p className="temporary"> GET THE MOST PREMIUM ITEMS FOR SALE IN IIIT-H FOR AFFORDABLE PRICES!</p></Col>
+            <Col className="mainCols text-white" id="hottestDeals" sm={6}>
+              <Carousel className="bg-dark" id="dealsCar">
+                <Carousel.Item>
+                  <div  className="carouselItem bg-dark container container-sm">
+                    <div className="carouselImgDiv bg-dark">
+                      <img src={require("./img/press.jpg")} alt="first"/>
+                    </div>
+                    <div className="bg-dark carouselInfoDiv test-center">
+                    <img className="saleTag" src={require("./img/saleTag.png")} alt="first"/>
+                    <h1 className="carouselText">CurrentBid:100Rs!</h1>
+                    <h1 className="carouselText">Minimum Increment:50Rs</h1>
+                    <h1 className="carouselText">Time Remaining: {getTime()}</h1>
+                    <h1 className="carouselText">HURRRRYY!</h1>
+                    </div>
+                  </div>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <div  className="carouselItem bg-dark container container-sm">
+                    <div className="carouselImgDiv bg-dark">
+                      <img src={require("./img/press.jpg")} alt="first"/>
+                    </div>
+                    <div className="bg-dark carouselInfoDiv test-center">
+                    <img className="saleTag" src={require("./img/saleTag.png")} alt="first"/>
+                    <h1 className="carouselText">CurrentBid:100Rs!</h1>
+                    <h1 className="carouselText">Minimum Increment:50Rs</h1>
+                    <h1 className="carouselText">Time Remaining: {getTime()}</h1>
+                    <h1 className="carouselText">HURRRRYY!</h1>
+                    </div>
+                  </div>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                  <div  className="carouselItem bg-dark container container-sm">
+                    <div className="carouselImgDiv bg-dark">
+                      <img src={require("./img/press.jpg")} alt="first"/>
+                    </div>
+                    <div className="bg-dark carouselInfoDiv test-center">
+                    <img className="saleTag" src={require("./img/saleTag.png")} alt="first"/>
+                    <h1 className="carouselText">CurrentBid:100Rs!</h1>
+                    <h1 className="carouselText">Minimum Increment:50Rs</h1>
+                    <h1 className="carouselText">Time Remaining: {getTime()}</h1>
+                    <h1 className="carouselText">HURRRRYY!</h1>
+                    </div>
+                  </div>
+                </Carousel.Item>
+                
+              </Carousel>
+            </Col>
             <Col className="bg-primary mainCols text-white" sm={6}><p className="temporary">REACH OUT TO YOUR IDEAL BUYER!</p></Col>
           </Row>
         </Container>
       </React.Fragment>
     )
   }
+
+  
+  
+  
 }
+
+
 
 export default Home;
