@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Navbar,Nav,Button, Container,Row,Col} from 'react-bootstrap';
+import {Button, Container,Row,Col} from 'react-bootstrap';
 import 'jquery';
 import 'popper.js';
-import {Link} from 'react-router-dom';
+
 
 
 class Home extends Component{
